@@ -1,0 +1,26 @@
+{
+  "projectName": "godottheme.nvim",
+  "projectOwner": "Rehd0",
+  "repoType": "github",
+  "repoHost": "",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 80,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "Rehd0",
+      "name": "Rehd",
+      "avatar_url": "https://avatars.githubusercontent.com/u/241371452?v=4",
+      "profile": "https://github.com/Rehd0",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": false
+}
