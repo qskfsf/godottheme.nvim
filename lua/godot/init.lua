@@ -17,6 +17,8 @@ function M.setup()
     darkGreen = "#6CC068",
     typeGreen = "#5EF5CA",
     blue = "#AAC9FE",
+    flowerBlue = "#A3A3F5",
+    funcCallBlue = "#1E90FF",
     pink = "#FF8CCC",
     gray = "#51545A",
     lightGray = "#2D3238",
@@ -38,12 +40,14 @@ function M.setup()
     Comment = { fg = colors.gray, italic = false, bold = false },
     Operator = { fg = colors.blue },
     Delimiter = { fg = colors.blue },
+    MatchParen = { bg = colors.lightGray, underline = true },
     Statement = { fg = colors.red },
     Conditional = { fg = colors.pink },
-    Exeption  = { fg = colors.pink },
+    Exception  = { fg = colors.pink },
     Function = { fg = colors.cyan },
-    Type = { fg = colors.typeGreen },
-    PreProc = { fg = colors.darkGreen },
+    Type = { fg = colors.green },
+    -- PreProc = { fg = colors.darkGreen },
+    Call = { fg = colors.flowerBlue },
 
     DiagnosticError = { fg = "#EE0000", bg = colors.errorRed, bold = false },
     DiagnosticWarn = { fg = "#EEEE00", bg = colors.errorYellow, bold = false },
@@ -58,8 +62,17 @@ function M.setup()
     Search = { bg = colors.transparentBlue },
     StatusLine = { fg = colors.lightTheme },
 
-    Tag = { fg = colors.blue }
+    Tag = { fg = colors.blue },
 
+    -- Treesitter support
+    ["@string.special.url"] = { fg = colors.darkGreen },
+    ["@function.builtin"] = { fg = colors.flowerBlue },
+    ["@keyword.conditional"] = { fg = colors.pink },
+    ["@keyword.repeat"] = { fg = colors.pink },
+    ["@keyword.exception"] = { fg = colors.pink },
+    ["@type.builtin"] = { fg = colors.typeGreen },
+    ["@keyword.return"] = { fg = colors.pink },
+    ["@function.call"] = { fg = colors.funcCallBlue },
   }
 
 
